@@ -7,7 +7,7 @@
         <title>MarketSite Home</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md">
             <a class="navbar-brand" href="#">Market Site</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -29,9 +29,19 @@
                         <a class="nav-link" href="#">Register</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav">
+                    <!-- Symbol added to toggle dark mode by clicking it-->
+                    <li>
+                        <a class="navbar-brand" href="#" id="btn-switch">
+                            <img src="static\light-bulb.png" alt="click to toggle dark mode" width="50" height="50" class="d-inline-block align-text-top">    
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <h1>Home Page</h1>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- Linking to dark mode script in static folder-->
+    <script src="{{url_for('static', filename='dark-mode.js')}}"></script>
 </html>
