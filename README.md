@@ -6,5 +6,5 @@ This is a simple market site web application built to store the items to store a
 
 ### Technologies and Frameworks
 
-programming language : Python
-frameworks : Flask
+- programming language : Python
+- frameworks : Flask
